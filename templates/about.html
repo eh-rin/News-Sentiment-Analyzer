@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div id="page-container">
+    <div id="content-wrap">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fa-solid fa-cubes" style="color: #edf5ff;"></i>
+                <span>News Article Sentiment Analyzer</span>
+            </div>
+            <nav class="nav-links">
+                <a href="/" class="nav-link">News Analyzer</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <h1>About</h1>
+
+            <h2>What is Sentiment Analysis?</h2>
+            <p>Sentiment analysis is the process of analyzing digital text to determine if the emotional tone of the message is positive, negative, or neutral.</p>
+
+            <h2>About this Web Application</h2>
+            <p>This web application is designed to automatically preprocess a CSV file of a dataset of collected online news articles. 
+                In this project, the dataset used is focused on English and Malay articles of Sabah environmental news.
+            </p>
+
+            <h2>Significance of this Project</h2>
+            <p>Environmental news impacts public awareness and policy decisions. By understanding the tone of media coverage, organizations and individuals can respond more effectively to emerging issues.</p>
+
+            <h2>Features</h2>
+            <p><b>Key features of this web application model:</b></p>
+            <ul>
+                <li>Upload a CSV file for analysis</li>
+                <li>Receive a summary of dataset results</li>
+                <li>Receive predicted sentiment</li>
+                <li>Receive data visualisations including charts and word clouds</li>
+                <li>Support for both English and Malay content</li>
+                <li>Simple and user-friendly interface</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer id="footer">
+            <p>&copy; 2025 News Article Sentiment Analyzer | Research Tool for Media Analysis | Contact: erinlinggu@gmail.com</p>
+    </footer>
+</body>
+</html>
