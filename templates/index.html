@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <!-- Chart.js for rendering bar charts -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- chart.js <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script> -->
-    <!-- D3.js core library for word cloud generation -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js"></script> -->
-    <!-- New library for word cloud (better for larger datasets)-->
+    <!-- Previous tested libraries 
+    chart.js -> https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js 
+    D3.js core library for word cloud generation 
+    -> "https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js
+    -> "https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js" - couldn't support word cloud for large data
+    -->
+    <!-- New library for word cloud (better for larger datasets) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.2.2/wordcloud2.min.js"></script>
     <!-- JavaScript file that handles the app functionality -->
     <script src="/static/script.js"></script>
@@ -26,8 +28,6 @@
     <header>
         <div class="container">
             <div class="logo">
-                <!-- My logo -->
-                <!-- <img src="{{ url_for('static', filename='logo_dummy.png') }}" alt="Logo" class="logo-img"> -->
                 <i class="fa-solid fa-cubes" style="color: #edf5ff;"></i>
                 <span>News Sentiment Analyzer</span>
             </div>
@@ -43,7 +43,7 @@
     <main class="container">
         <div class="card">
             <div class="card-header">
-                <h1><i class="fa-solid fa-newspaper"></i> News Article Sentiment Analysis</h1>
+                <h1>News Article Sentiment Analysis</h1>
                 <p>This is a tool for analysing sentiment in news article datasets in English and Malay languages.</p>
             </div>
 
