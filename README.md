@@ -1,2 +1,2 @@
-# News-Sentiment-Analyzer-FYP
+# News-Sentiment-Analyzer
 Student final-year project
